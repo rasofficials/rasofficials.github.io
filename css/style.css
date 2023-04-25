@@ -14,18 +14,40 @@
     background-image: linear-gradient(0deg, mediumpurple, #212529);
 }
 
+.fill {
+    height: 100vh;
+}
+
 .main-bg-2 {
     background-image: linear-gradient(180deg, mediumpurple, #212529);
 }
 
+.back-opacity {
+    background-color: #212529d9;
+}
+
 .top-div {
-    height: 600px;
+    height: 100vh;
     border-bottom-right-radius: 100%;
-    box-shadow: 0 0 15px 0px rgb(137, 105, 202);
+    box-shadow: 0 0 35px 5px rgb(137, 105, 202);
+}
+
+.features-div {
+    background-color: mediumpurple;
+    border-bottom-right-radius: 100%;
+    box-shadow: 0 0 35px 5px rgb(137, 105, 202);
+}
+
+.z-1 {
+    z-index: 100000;
 }
 
 .purple-shadow-cards {
     box-shadow: 0 0 30px 0px rgb(137, 105, 202);
+}
+
+.btn-shadow {
+    box-shadow: 0 0 20px 0px rgb(0 0 0);
 }
 
 .center-div {
