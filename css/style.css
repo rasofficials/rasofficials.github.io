@@ -1,1 +1,65 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
+.main-color {
+    color: mediumpurple;
+}
+
+.main-color-bg {
+    background-color: mediumpurple;
+}
+
+.main-bg {
+    background-image: linear-gradient(0deg, mediumpurple, #212529);
+}
+
+.main-bg-2 {
+    background-image: linear-gradient(180deg, mediumpurple, #212529);
+}
+
+.top-div {
+    height: 600px;
+    border-bottom-right-radius: 100%;
+    box-shadow: 0 0 15px 0px rgb(137, 105, 202);
+}
+
+.purple-shadow-cards {
+    box-shadow: 0 0 30px 0px rgb(137, 105, 202);
+}
+
+.center-div {
+    height: 500px;
+}
+
+.bold-font {
+    font-weight: bold;
+}
+
+.card-height {
+    height: 300px;
+}
+
+.dark-shadow {
+    box-shadow: 0 0 30px 0px #000;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #443f5e;
+    border-radius: 20px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #333047; 
+  }
