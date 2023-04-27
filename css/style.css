@@ -18,6 +18,30 @@
     height: 100vh;
 }
 
+.title:hover {
+    text-decoration: none;
+    color: mediumpurple;
+    transition: all 0.2s;
+}
+
+.title {
+    transition: all 0.2s;
+}
+
+hr {
+    border: 2px solid mediumpurple;
+    opacity: 1;
+    width: 100px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+.img-banner {
+    box-shadow: 0 0 20px 0 black;
+}
+
 .main-bg-2 {
     background-image: linear-gradient(180deg, mediumpurple, #212529);
 }
@@ -32,10 +56,22 @@
     box-shadow: 0 0 35px 5px rgb(137, 105, 202);
 }
 
-.features-div {
+.bottom-div {
     background-color: mediumpurple;
-    border-bottom-right-radius: 100%;
+    border-top-left-radius: 100%;
     box-shadow: 0 0 35px 5px rgb(137, 105, 202);
+}
+
+a {
+    text-decoration: underline solid mediumpurple;
+}
+
+a:hover {
+    text-decoration: underline solid rgba(147, 112, 216, 0.644);
+}
+
+.footer {
+    height: 300px;
 }
 
 .z-1 {
@@ -44,6 +80,13 @@
 
 .purple-shadow-cards {
     box-shadow: 0 0 30px 0px rgb(137, 105, 202);
+    transition: 0.2s all;
+}
+
+.purple-shadow-cards:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 10px 0px rgb(137, 105, 202);
+    transition: 0.2s all;
 }
 
 .btn-shadow {
@@ -66,22 +109,58 @@
     box-shadow: 0 0 30px 0px #000;
 }
 
+@keyframes swingViewport {
+    from {
+      opacity: 0;
+      border-bottom-right-radius: 0%;
+    }
+    to {
+      opacity: 1;
+      border-bottom-right-radius: 100%;
+    }
+  }
+
+.top-ani {
+    animation: 2s ease-in-out alternate swingViewport;
+}
+
+.ani {
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.ani.active {
+    opacity: 1;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
 ::-webkit-scrollbar {
     width: 5px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: transparent; 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
     background: #443f5e;
     border-radius: 20px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #333047; 
-  }
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #333047;
+}

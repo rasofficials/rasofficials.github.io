@@ -19,8 +19,9 @@
 <body class="bg-dark">
   <nav class="navbar navbar-dark back-opacity fixed-top btn-shadow">
     <div class="container-fluid">
-      <a class="navbar-brand bold-font" href="#">
-        <img src="/img/logo.png" alt="logo" height="25px" draggable="false"> RASCASH</a>
+      <a class="navbar-brand bold-font title" href="#">
+        <img src="/img/logo.png" alt="logo" height="25px" draggable="false"> RASCASH
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
         aria-controls="offcanvasDarkNavbar">
         <span class="navbar-toggler-icon"></span>
@@ -42,25 +43,11 @@
             <li class="nav-item">
               <a class="nav-link" href="#features">Features</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu dropdown-menu-dark">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="#how">How does it work?</a>
             </li>
+            
           </ul>
-          <form class="d-flex mt-3" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-success" type="submit">Search</button>
-          </form>
         </div>
       </div>
     </div>
@@ -68,42 +55,52 @@
 
   <div class="alert alert-danger alert-dismissible fade show z-1 fixed-bottom" role="alert">
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-exclamation-circle-fill" viewBox="0 0 16 16">
-      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+      class="bi bi-exclamation-circle-fill" viewBox="0 0 16 16">
+      <path
+        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
     </svg>
     <strong>ABGCASH is not released yet!</strong>
-  </div>  
+  </div>
 
-  <div class="container-fluid main-bg top-div" id="home">
+  <div class="container-fluid main-bg top-div top-ani" id="home">
     <div class="container-md pt-5">
       <div class="row justify-content-center align-items-center g-2 pt-5">
-        <div class="col-sm">
-          <h1 class="bold-font"><img src="/img/logo.png" alt="logo" height="35px" draggable="false"> RASCASH</h1>
+        <div class="col-sm mb-4">
+          <h1 class="bold-font text-light"><img src="/img/logo.png" alt="logo" height="35px" draggable="false"> RASCASH</h1>
+          <div class="ps-5">
+            <hr>
           <h5 class="text-light">The revolutionary software that can help you generate money like never before!</h5>
-          <button type="button" class="btn btn-outline-light main-color-bg btn-shadow bold-font">Download</button>
-
+          <a href="#how"><button type="button" class="btn btn-outline-light main-color-bg btn-shadow bold-font mt-2">How does it work?</button></a>
+          </div>
         </div>
-        <div class="col">
-          <img src="/img/dashboard.JPG" class="img-fluid" alt="dashboard" draggable="false">
+        <div class="col-sm">
+          <img src="/img/dashboard.JPG" class="img-fluid img-banner" alt="dashboard" draggable="false">
         </div>
       </div>
     </div>
   </div>
 
-  <div class="container-fluid bg-transparent mt-5" id="features">
+  <div class="container-fluid bg-transparent mt-5 reveal" id="features">
     <div class="container-md">
+      <h2 class="text-light text-center">FEATURES</h2>
+      <hr class="m-auto mb-4">
+      <br>
       <div class="row justify-content-center align-items-center g-5">
         <div class="col-sm">
-          <img src="/img/started.JPG" class="img-fluid" alt="" draggable="false">
+          <img src="/img/started.JPG" class="img-fluid img-banner" alt="" draggable="false">
         </div>
-        <div class="col">
+        <div class="col-sm">
           <div class="card main-color-bg purple-shadow-cards pb-3 mb-3">
             <div class="card-body">
-              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-currency-bitcoin text-light bg-dark dark-shadow rounded mt-2 ms-2 p-2" viewBox="0 0 16 16">
-                <path d="M5.5 13v1.25c0 .138.112.25.25.25h1a.25.25 0 0 0 .25-.25V13h.5v1.25c0 .138.112.25.25.25h1a.25.25 0 0 0 .25-.25V13h.084c1.992 0 3.416-1.033 3.416-2.82 0-1.502-1.007-2.323-2.186-2.44v-.088c.97-.242 1.683-.974 1.683-2.19C11.997 3.93 10.847 3 9.092 3H9V1.75a.25.25 0 0 0-.25-.25h-1a.25.25 0 0 0-.25.25V3h-.573V1.75a.25.25 0 0 0-.25-.25H5.75a.25.25 0 0 0-.25.25V3l-1.998.011a.25.25 0 0 0-.25.25v.989c0 .137.11.25.248.25l.755-.005a.75.75 0 0 1 .745.75v5.505a.75.75 0 0 1-.75.75l-.748.011a.25.25 0 0 0-.25.25v1c0 .138.112.25.25.25L5.5 13zm1.427-8.513h1.719c.906 0 1.438.498 1.438 1.312 0 .871-.575 1.362-1.877 1.362h-1.28V4.487zm0 4.051h1.84c1.137 0 1.756.58 1.756 1.524 0 .953-.626 1.45-2.158 1.45H6.927V8.539z"/>
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                class="bi bi-currency-bitcoin text-light bg-dark dark-shadow rounded mt-2 ms-2 p-2" viewBox="0 0 16 16">
+                <path
+                  d="M5.5 13v1.25c0 .138.112.25.25.25h1a.25.25 0 0 0 .25-.25V13h.5v1.25c0 .138.112.25.25.25h1a.25.25 0 0 0 .25-.25V13h.084c1.992 0 3.416-1.033 3.416-2.82 0-1.502-1.007-2.323-2.186-2.44v-.088c.97-.242 1.683-.974 1.683-2.19C11.997 3.93 10.847 3 9.092 3H9V1.75a.25.25 0 0 0-.25-.25h-1a.25.25 0 0 0-.25.25V3h-.573V1.75a.25.25 0 0 0-.25-.25H5.75a.25.25 0 0 0-.25.25V3l-1.998.011a.25.25 0 0 0-.25.25v.989c0 .137.11.25.248.25l.755-.005a.75.75 0 0 1 .745.75v5.505a.75.75 0 0 1-.75.75l-.748.011a.25.25 0 0 0-.25.25v1c0 .138.112.25.25.25L5.5 13zm1.427-8.513h1.719c.906 0 1.438.498 1.438 1.312 0 .871-.575 1.362-1.877 1.362h-1.28V4.487zm0 4.051h1.84c1.137 0 1.756.58 1.756 1.524 0 .953-.626 1.45-2.158 1.45H6.927V8.539z" />
               </svg>
               <h3 class="card-title mt-4 ms-2 text-light">Easy To Use</h3>
-              <h5 class="card-text ms-2">Earning <b>crypto</b> with just a click of a button refers to an easy and convenient way to earn cryptocurrency.</h5>
+              <h5 class="card-text ms-2">Earning <b>crypto</b> with just a click of a button refers to an easy and
+                convenient way to earn cryptocurrency.</h5>
             </div>
           </div>
 
@@ -128,15 +125,80 @@
                   d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm0 5a1.5 1.5 0 0 1 .5 2.915l.385 1.99a.5.5 0 0 1-.491.595h-.788a.5.5 0 0 1-.49-.595l.384-1.99A1.5 1.5 0 0 1 8 5z" />
               </svg>
               <h3 class="card-title ms-2 mt-4 text-light">Private</h3>
-              <h5 class="card-text ms-2"><b>RASCASH</b> collects no personal information from its users. The information we do store is very minimal</h5>
+              <h5 class="card-text ms-2"><b>RASCASH</b> collects no personal information from its users. The information
+                we do store is very minimal</h5>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+
+  <div class="container-fluid bg-transparent mt-5 mb-5 reveal" id="how">
+    <div class="container-md">
+      <h2 class="text-light text-center">How does it <span class="main-color">work?</span></h2>
+      <hr class="m-auto mb-4">
+      <div class="row justify-content-center g-5">
+        <div class="col-sm">
+          <div class="card main-color-bg purple-shadow-cards pb-3 mb-3">
+            <div class="card-body">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-1-circle text-light bg-dark dark-shadow rounded mt-2 ms-2 p-2" viewBox="0 0 16 16">
+                <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383h1.312Z"/>
+              </svg>
+              <h3 class="card-title ms-2 mt-4 text-light">Get started</h3>
+              <h5 class="card-text ms-2">Login and click start to earn your crypto.</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card main-color-bg purple-shadow-cards pb-3 mb-3">
+            <div class="card-body">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-2-circle text-light bg-dark dark-shadow rounded mt-2 ms-2 p-2" viewBox="0 0 16 16">
+                <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM6.646 6.24v.07H5.375v-.064c0-1.213.879-2.402 2.637-2.402 1.582 0 2.613.949 2.613 2.215 0 1.002-.6 1.667-1.287 2.43l-.096.107-1.974 2.22v.077h3.498V12H5.422v-.832l2.97-3.293c.434-.475.903-1.008.903-1.705 0-.744-.557-1.236-1.313-1.236-.843 0-1.336.615-1.336 1.306Z"/>
+              </svg>
+              <h3 class="card-title ms-2 mt-4 text-light">Make money</h3>
+              <h5 class="card-text ms-2">You will get payed a minimum of $0,30 up to $2,30 per token!</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card main-color-bg purple-shadow-cards pb-3 mb-3">
+            <div class="card-body">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-3-circle text-light bg-dark dark-shadow rounded mt-2 ms-2 p-2" viewBox="0 0 16 16">
+                <path d="M7.918 8.414h-.879V7.342h.838c.78 0 1.348-.522 1.342-1.237 0-.709-.563-1.195-1.348-1.195-.79 0-1.312.498-1.348 1.055H5.275c.036-1.137.95-2.115 2.625-2.121 1.594-.012 2.608.885 2.637 2.062.023 1.137-.885 1.776-1.482 1.875v.07c.703.07 1.71.64 1.734 1.917.024 1.459-1.277 2.396-2.93 2.396-1.705 0-2.707-.967-2.754-2.144H6.33c.059.597.68 1.06 1.541 1.066.973.006 1.6-.563 1.588-1.354-.006-.779-.621-1.318-1.541-1.318Z"/>
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Z"/>
+              </svg>
+              <h3 class="card-title ms-2 mt-4 text-light">Get payed</h3>
+              <h5 class="card-text ms-2">Once you earn $15,00 or more, just withdraw your cash to your crypto wallet.</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
+  <div class="container-fluid footer mt-5 main-bg pt-5 ani">
+    <div class="container-md">
+      <div class="row justify-content-center g-2">
+        <div class="col-sm">
+          <h4 class="text-light">Important Links</h4>
+          <a href="#features"><h5 class="text-dark">Features</h5></a>
+          <a href="#how"><h5 class="text-dark">How does it work?</h5></a>
+        </div>
+        <div class="col-sm"></div>
+        <div class="col-sm">
+          <h4 class="text-light">Social Media</h4>
+          <a href="#features"><h5 class="text-dark">Discord</h5></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid bg-transparent fixed-bottom">
+    <h6 class="text-light">Copyright © 2023 RASCASH</h6>
+  </div>
+
+  <script src="/js/main.js"></script>
 </body>
 
 </html>
